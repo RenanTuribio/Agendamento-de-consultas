@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/style.css">
     <title>Agendamento de consultas</title>
 </head>
 <body>
-    <main>
+    <main class="main">
         <section class="cabecalho">
             <img class="img-perfil" src="img/perfil-1.jpg" alt="">
             <div class="apresentacao">
@@ -264,13 +265,43 @@
         </section>
 
     </main>
-    <!-- menu -->
-    <div class="add">
+    <!-- botão add -->
+    <div class="btns_flutuantes add">
         <a href="#">
             <span class="material-symbols-outlined">
                 add
             </span>
         </a>
+    </div>
+    <!-- botões ocultos -->
+    <div class="botoes_ocultos">
+        <div class="modal">
+            <!-- botão de agendamento online -->
+            <div class="btns_flutuantes agenda-consulta_virtual">
+                <a href="https://www.google.com/">
+                    <span class="material-symbols-outlined">
+                        videocam
+                    </span>
+                </a>
+                <span class="infor-btn-flutuante infor-btn-video">Nova consulta por vídeo</span>
+            </div>
+            <!-- botão de agendamento residencial -->
+            <div class="btns_flutuantes agenda-consulta_endereco">
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                </a>
+                <span class="infor-btn-flutuante infor-btn-local">Nova consulta na casa do paciente</span>
+            </div> 
+        </div>
+        <div class="btns_flutuantes add">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </a>
+        </div>
     </div>
     <!-- navbar menu -->
     <nav class="menu">
