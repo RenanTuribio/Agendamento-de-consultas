@@ -311,12 +311,29 @@ li {
 }
 
 @media (min-width: 1440px) {
+    main {
+        padding-left: 270px;
+    }
     .consultas {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
     .menu ul {
-        justify-content: space-evenly;
+        justify-content: start;
+        flex-direction: column-reverse;
+        align-items:start;
+        max-width: 15%;
+        height: 100vh;
     }
+
+    .menu a {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu span {
+        padding: 8px;
+    }
+
 }
